@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-decoration: none;
+    font-family: sans-serif;
 }
 html{
     scroll-behavior: smooth;
@@ -106,9 +107,6 @@ main{
     align-items: start;
     gap: 20px;
 }
-.servicos h2{
-    font-family: sans-serif;
-}
 .servicos_container{
     width: 100%;
     height: 30%;
@@ -137,8 +135,7 @@ main{
 }
 .hero_img{
     width: 100%;
-    height: 500px;
-    background-color: red;
+    height: 80dvh;
 }
 .hero_img img{
     object-fit: cover;
@@ -170,4 +167,18 @@ main{
 #services_container{
     width: 100%;
     min-height: 50dvh;
+}
+
+@media (min-width: 600px) {
+    .categoria{
+        width: 170px;
+        height: 200px;
+        gap: 20px;
+        font-size: 16pt;
+        font-weight: 500;
+    }
+    .servico{
+        width: 270px;
+        height: 150px;
+    }
 }
