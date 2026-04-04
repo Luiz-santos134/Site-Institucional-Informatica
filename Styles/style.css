@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: sans-serif;
     text-decoration: none;
+    font-family: sans-serif;
 }
 :root{
     --itens_loja: rgb(214, 214, 214);
@@ -146,6 +147,15 @@ main{
 .servico:hover{
     transform: scale(1.05);
 }
+.hero_img{
+    width: 100%;
+    height: 80dvh;
+}
+.hero_img img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
 #primeiroBanner{
     width: 100%;
     height: 50dvh;
@@ -171,6 +181,20 @@ main{
 #services_container{
     width: 100%;
     min-height: 50dvh;
+}
+
+@media (min-width: 600px) {
+    .categoria{
+        width: 170px;
+        height: 200px;
+        gap: 20px;
+        font-size: 16pt;
+        font-weight: 500;
+    }
+    .servico{
+        width: 270px;
+        height: 150px;
+    }
 }
 .produtos{
     scroll-margin-top: 15dvh;
